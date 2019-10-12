@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <link rel="stylesheet" type="text/css" href="index.css">
+    <script type="text/javascript" src="index.js"></script>
+</head>
+<header>
+    <h1>FK07 - AUSLEIH3000</h1>
+</header>
+
+<body>
+    <div id="upper-buttons">
+        <button onclick="showHide()">Alle Ausleihen anzeigen</button>
+        <button onclick="toggleAddElement()">Neue Ausleihe</button>
+
+
+        <div id="add-element" style="display:none">
+            <table id="add-element-table" width=100%>
+                <tr>
+                    <th>Gegenstand</th>
+                    <th>Ausgeliehen am</th>
+                    <th>Fällig am</th>
+                    <th>Vorname</th>
+                    <th>Name</th>
+                    <th>Handynummer</th>
+                    <th>Bibliotheksnummer</th>
+
+                </tr>
+                <tr>
+                    <th>
+                        <select id="asset-selection">
+                            <option style="text-align:center"> - Gegenstand - </option>
+                        </select>
+                    </th>
+                    <th>
+                        <input type="date">
+                    </th>
+                    <th>
+                        <input type="date">
+                    </th>
+                    <th>
+                        <input type="text">
+                    </th>
+                    <th>
+                        <input type="text">
+                    </th>
+                    <th>
+                        <input type="number">
+                    </th>
+                    <th>
+                        <input type="number">
+                    </th>
+                    <th>
+                        <button style="margin: 10px">Speichern</button>
+                    </th>
+
+                </tr>
+            </table>
+
+
+
+        </div>
+    </div>
+
+    <div id="spoiler" style="display:none; color: white">
+        <table id="borrow-table">
+            <tr>
+                <th>Gegenstand</th>
+                <th>Ausgeliehen am</th>
+                <th>Fällig am</th>
+                <th>Vorname</th>
+                <th>Name</th>
+                <th>Handynummer</th>
+                <th>Bibliotheksnummer</th>
+                <th>Zurückgegeben</th>
+            </tr>
+            <tr>
+                <td>Adapter VGA-HDMI</td>
+                <td>14.10.2019</td>
+                <td>17.10.2019</td>
+                <td>Markus</td>
+                <td>Wiesheu</td>
+                <td>01736661337</td>
+                <td>90221688017</td>
+                <td><input type="checkbox" id=><br></td>
+            </tr>
+            <tr>
+                <td>Adapter VGA-HDMI</td>
+                <td>14.10.2019</td>
+                <td>17.10.2019</td>
+                <td>Markus</td>
+                <td>Wiesheu</td>
+                <td>01736661337</td>
+                <td>90221688017</td>
+                <td><input type="checkbox"><br></td>
+            </tr>
+        </table>
+    </div>
+
+    <div class="status">
+        <p>Status</p>
+        <div id=inner-status>
+            <p>Anzahl aktiver ausleihen</p>
+            <span id="active">0</span>
+            <p>Anzahl überfälliger Ausleihen</p>
+            <span id="overdue">0</span>
+        </div>
+
+    </div>
+
+</body>
+
+</html>
