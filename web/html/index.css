@@ -7,8 +7,23 @@
 }
 
 button {
-    margin-top: 10px
+    margin-left: 10px;
+    margin-top: 10px;
+    background-color: #4caf50;
+    color: white;
+    padding: 7px 15px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    border-radius: 4px;
 }
+button:hover{
+    background-color: #04e021;
+    color: #24272e;
+}
+
+
 
 body {
     background-color: #24272e

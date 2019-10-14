@@ -14,6 +14,7 @@
     <div id="upper-buttons">
         <button onclick="showHide()">Alle Ausleihen anzeigen</button>
         <button onclick="toggleAddElement()">Neue Ausleihe</button>
+        <button>Neuen Gegenstand registrieren</button>
 
 
         <div id="add-element" style="display:none">
@@ -31,29 +32,29 @@
                 <tr>
                     <th>
                         <select id="asset-selection">
-                            <option style="text-align:center"> - Gegenstand - </option>
+                            <option id = "item" style="text-align:center">- Gegenstand -</option>
                         </select>
                     </th>
                     <th>
-                        <input type="date">
+                        <input type="date" id = "start-date">
                     </th>
                     <th>
-                        <input type="date">
+                        <input type="date"id = "due-date">
                     </th>
                     <th>
-                        <input type="text">
+                        <input type="text" id="name">
                     </th>
                     <th>
-                        <input type="text">
+                        <input type="text" id = "surname">
                     </th>
                     <th>
-                        <input type="number">
+                        <input type="number" id = "cell">
                     </th>
                     <th>
-                        <input type="number">
+                        <input type="number" id = "lib">
                     </th>
                     <th>
-                        <button style="margin: 10px">Speichern</button>
+                        <button style="margin: 10px" onclick="saveNewElement()">Speichern</button>
                     </th>
 
                 </tr>
@@ -75,26 +76,6 @@
                 <th>Handynummer</th>
                 <th>Bibliotheksnummer</th>
                 <th>Zurückgegeben</th>
-            </tr>
-            <tr>
-                <td>Adapter VGA-HDMI</td>
-                <td>14.10.2019</td>
-                <td>17.10.2019</td>
-                <td>Markus</td>
-                <td>Wiesheu</td>
-                <td>01736661337</td>
-                <td>90221688017</td>
-                <td><input type="checkbox" id=><br></td>
-            </tr>
-            <tr>
-                <td>Adapter VGA-HDMI</td>
-                <td>14.10.2019</td>
-                <td>17.10.2019</td>
-                <td>Markus</td>
-                <td>Wiesheu</td>
-                <td>01736661337</td>
-                <td>90221688017</td>
-                <td><input type="checkbox"><br></td>
             </tr>
         </table>
     </div>
